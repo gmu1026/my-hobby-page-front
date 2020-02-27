@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     infiniteHandler($state) {
-      axios.get('http://localhost:9000/api/v1/content/list2', {
+      axios.get('http://localhost:8080/api/v1/content/list2', {
         params: {
           page: this.page,
           size: this.size
