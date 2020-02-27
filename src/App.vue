@@ -25,17 +25,7 @@ export default {
     Navigation,
     PageHeader,
     MainContent
-  },
-  created() {
-    axios.get('http://localhost:9000/api/v1/content/list2', {
-      params: {
-        page: this.page,
-        size: this.size
-      }
-    }).then(response => {
-      this.datas = response.data.content
-    })
-  },
+  }
 }
 </script>
 
