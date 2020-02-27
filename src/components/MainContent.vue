@@ -12,7 +12,7 @@
             </h3>
           </a>
           <p class="post-meta">Posted by
-            {{ data.date }}</p>
+            {{ data.metaData }}</p>
           <hr>
         </div>
         <infinite-loading @infinite="infiniteHandler" spinner="waveDots"></infinite-loading>
@@ -39,7 +39,7 @@ export default {
   },
   methods: {
     infiniteHandler($state) {
-      axios.get('http://localhost:8080/api/v1/content/list2', {
+      axios.get('http://iamchan.net:8080/api/v1/content/list2', {
         params: {
           page: this.page,
           size: this.size

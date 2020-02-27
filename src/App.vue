@@ -10,7 +10,6 @@
 import Navigation from './components/Navigation.vue'
 import PageHeader from './components/PageHeader.vue'
 import MainContent from './components/MainContent.vue'
-import axios from 'axios'
 
 export default {
   name: 'App',
